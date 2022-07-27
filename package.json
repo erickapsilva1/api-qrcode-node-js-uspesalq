@@ -1,0 +1,15 @@
+{
+  "name": "qr-code",
+  "version": "1.0.0",
+  "description": "API que recebe uma URL e converte para QRCode.",
+  "main": "index_express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Silva",
+  "license": "ISC",
+  "dependencies": {
+    "easyqrcodejs-nodejs": "^4.4.4",
+    "express": "^4.18.1"
+  }
+}
