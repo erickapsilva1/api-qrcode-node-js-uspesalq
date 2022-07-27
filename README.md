@@ -19,3 +19,17 @@ Necessita de um parâmetro JSON, conforme abaixo.
 
 ![Alt Text](https://media.giphy.com/media/4PR2rCqEluWWGQGQTB/giphy.gif)
 
+## Instalação
+
+Com o NodeJS instalado, execute o comando abaixo para baixar as dependências: 
+
+```
+npm install
+```
+
+E inicie a app com o comando: 
+
+```
+node index_express.js
+```
+
