@@ -11,26 +11,23 @@ app.get('/', function(req, res) {
   res.send('Olá Mundo! :D');
 });
 
-app.post('/gera-qrcode', function(req, res) {
-  var { mensagem } = req.body
+app.post('/gera-qrcode', async function(req, res) {
+  var { url_site } = req.body
   console.clear();
-  console.log(mensagem);
+  console.log(url_site);
   
   var options={
-        text: mensagem
+        text: url_site
   };
 
   var qrcode=new QRCode(options);
 
-  //qrcode.saveImage({
-  //      path:'seu-qr-code.png'
-  //});
-
-
+  await qrcode.saveImage({
+        path:'seu-qr-code.png'
+  });
 
   res.sendFile('seu-qr-code.png', { root: __dirname });
 
-  //res.send('QRCode gerado com sucesso!');
 });
 
 app.listen(3001, function() {
